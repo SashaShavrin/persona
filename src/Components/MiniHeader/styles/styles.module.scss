@@ -1,0 +1,80 @@
+@mixin breakpoint($point) {
+  @if $point ==lg {
+    @media (max-width: 992px) {
+      @content;
+    }
+  } @else if $point ==md {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $point ==sm {
+    @media (max-width: 576px) {
+      @content;
+    }
+  } @else if $point ==xs {
+    @media (max-width: 370px) {
+      @content;
+    }
+  } @else if $point ==xl {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if $point ==xxl {
+    @media (max-width: 1400px) {
+      @content;
+    }
+  }
+}
+
+@import "../../../global.css";
+
+.header {
+  &_mini {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: white !important;
+  }
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 15px;
+  &_mini {
+    width: 100%;
+    position: relative;
+    height: 40px;
+    background: linear-gradient(
+      43deg,
+      var(--violet_light) 0%,
+      var(--violet_medium) 46%,
+      #ffcc70 100%
+    );
+    @include breakpoint(md) {
+      height: 50px;
+    }
+  }
+}
+
+.info {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  @include breakpoint(md) {
+    font-size: 12px;
+    padding: 0 55px;
+  }
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translate(0%, -50%);
+}

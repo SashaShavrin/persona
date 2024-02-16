@@ -1,0 +1,169 @@
+@mixin breakpoint($point) {
+  @if $point ==lg {
+    @media (max-width: 992px) {
+      @content;
+    }
+  } @else if $point ==md {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $point ==sm {
+    @media (max-width: 576px) {
+      @content;
+    }
+  } @else if $point ==xs {
+    @media (max-width: 370px) {
+      @content;
+    }
+  } @else if $point ==xl {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if $point ==xxl {
+    @media (max-width: 1400px) {
+      @content;
+    }
+  }
+}
+
+@import "../../../global.css";
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 100vh;
+  width: calc(100vw - 5px);
+  margin: 0 auto;
+  @include breakpoint(xxl) {
+    flex-direction: column;
+  }
+  @include breakpoint(md) {
+    height: auto;
+  }
+}
+
+.left {
+  width: 50vw;
+  border-right: medium solid white;
+  padding: 15px 75px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include breakpoint(xxl) {
+    width: 90vw;
+    margin-top: 25px;
+    border-right: 0;
+    align-items: start;
+    border-bottom: medium solid white;
+  }
+  @include breakpoint(lg) {
+    width: calc(100vw - 5px);
+    padding: 15px 35px;
+  }
+  @include breakpoint(sm) {
+    padding: 15px 20px;
+    margin-top: 75px;
+  }
+}
+
+.right {
+  width: 50vw;
+  height: 100%;
+  padding: 25px;
+  padding-right: 0;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include breakpoint(xxl) {
+    width: 90vw;
+  }
+}
+
+.comment {
+  font-style: italic;
+  font-size: 30px;
+  border-left: medium solid rgba(173, 173, 173, 0.3);
+  font-family: "Literata", serif;
+  line-height: 95%;
+  padding: 15px 30px;
+}
+
+.author {
+  margin-top: 50px;
+  margin-left: 50px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.direction {
+  margin-top: 100px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.306);
+}
+
+.description {
+  margin-top: 25px;
+}
+
+.header {
+  font-size: 30px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  @include breakpoint(sm) {
+    margin-top: 25px;
+  }
+
+  div {
+    font-size: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-bottom: medium solid rgba(255, 255, 255, 0.246);
+  }
+}
+
+.image {
+  height: 100%;
+  background-image: url(../../../../public/img/fon.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+
+  @include breakpoint(xxl) {
+    background-position: center center;
+    background-size: cover;
+    border-radius: 25px;
+    margin-bottom: 50px;
+  }
+
+  @include breakpoint(md) {
+    background-size: contain;
+    height: 50vh;
+  }
+}
+
+.similar {
+  margin-top: 60px;
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  @include breakpoint(sm) {
+    margin-bottom: -60px;
+  }
+}

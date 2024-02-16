@@ -1,0 +1,16 @@
+@import "../../../global.css";
+.start {
+  margin: 50px auto;
+}
+
+@media (max-width: 1200px) {
+  .selected_categories {
+    margin-top: 600px;
+  }
+}
+@media (max-width: 576px) {
+  .selected_categories {
+    margin-top: 650px;
+    margin-bottom: 100px;
+  }
+}/*# sourceMappingURL=styles.module.css.map */

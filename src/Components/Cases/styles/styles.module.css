@@ -1,0 +1,142 @@
+@import "../../../global.css";
+.cases {
+  margin: 50px auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 576px) {
+  .cases {
+    margin: 100px auto;
+  }
+}
+.cases a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.case {
+  margin: 1rem;
+  width: 25rem;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 3rem;
+  transition: 0.1s;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+@media (max-width: 992px) {
+  .case {
+    width: 19.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .case {
+    width: 34rem;
+  }
+}
+@media (max-width: 576px) {
+  .case {
+    width: auto;
+  }
+}
+.case_image_wrapper {
+  padding-top: 10px;
+  border-radius: 25px;
+}
+.case_image {
+  height: 15rem;
+  background-image: url(../../../../public/img/fon.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  border-radius: 25px;
+  background-size: contain;
+}
+.case_content {
+  padding: 10px 15px;
+  height: 15rem;
+}
+.case_profile {
+  display: flex;
+  align-items: start;
+  margin: 25px auto;
+}
+.case_info {
+  margin-left: 10px;
+}
+.case_title {
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: -1px;
+}
+.case_direction {
+  text-transform: uppercase;
+}
+.case_headers {
+  font-weight: bold;
+  letter-spacing: -1px;
+  font-size: 25px;
+}
+.case_read {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.case_read svg {
+  margin-left: 5px;
+}
+
+.case:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.case:hover > .case_image_wrapper {
+  z-index: -1;
+  position: relative;
+}
+
+.case:hover {
+  color: white;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 15%, rgba(22, 36, 91, 0.4352941176) 30%, #071c3f 50%, #000000 100%);
+}
+@media (max-width: 576px) {
+  .case:hover {
+    width: auto;
+  }
+}
+
+.case_hover {
+  margin-top: -100px;
+  padding: 10px 15px;
+  transition: 0.4s;
+  animation-duration: 0.2s;
+  animation-name: slidein;
+  position: relative;
+  height: 17rem;
+}
+
+.description {
+  margin-top: 25px;
+  line-height: 120%;
+  margin-top: 25px;
+}
+
+@keyframes slidein {
+  from {
+    margin: 0;
+    opacity: 0;
+  }
+  to {
+    margin-top: -100px;
+    opacity: 1;
+  }
+}
+.read_bottm {
+  position: absolute;
+  bottom: -15px;
+  font-size: 16px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid wheat;
+}/*# sourceMappingURL=styles.module.css.map */

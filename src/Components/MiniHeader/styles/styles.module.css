@@ -1,0 +1,49 @@
+@import "../../../global.css";
+.header_mini {
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: white !important;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 15px;
+}
+.inner_mini {
+  width: 100%;
+  position: relative;
+  height: 40px;
+  background: linear-gradient(43deg, var(--violet_light) 0%, var(--violet_medium) 46%, #ffcc70 100%);
+}
+@media (max-width: 768px) {
+  .inner_mini {
+    height: 50px;
+  }
+}
+
+.info {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  .info {
+    font-size: 12px;
+    padding: 0 55px;
+  }
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translate(0%, -50%);
+}/*# sourceMappingURL=styles.module.css.map */

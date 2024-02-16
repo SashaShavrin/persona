@@ -1,0 +1,22 @@
+<svg width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.4998 36.5001V3.50006C19.4998 3.50006 17.7965 1.81482 16.4998 2.00006C15.133 2.19533 13.9998 4.50006 13.9998 4.50006C13.9998 4.50006 10.5979 4.07354 9.49979 5.50006C8.65758 6.59416 8.99979 9.00006 8.99979 9.00006C8.99979 9.00006 6.46035 9.36485 5.49979 10.5001C4.11238 12.1397 5.49979 16.0001 5.49979 16.0001C5.49979 16.0001 2.23955 17.582 1.99979 19.5001C1.72365 21.7092 5.49979 24.0001 5.49979 24.0001C5.49979 24.0001 3.12991 27.8003 4.49979 29.5001C5.62943 30.9018 8.99979 30.5001 8.99979 30.5001C8.99979 30.5001 7.83137 33.6874 8.99979 35.0001C10.1754 36.3208 13.4998 35.5001 13.4998 35.5001C13.4998 35.5001 14.6996 38.996 16.4998 39.0001C18.0248 39.0035 19.4998 36.5001 19.4998 36.5001Z" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M19 13.5H11.5" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M15 13.5V9.5" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M18.5 17H10V21.5" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M18.5 22.5H14.5V26.5" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M18.5 32H14.5V28" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="15.5" cy="8.5" r="1.5" stroke="black" stroke-width="2"/>
+<circle cx="14.5" cy="27.5" r="1.5" stroke="black" stroke-width="2"/>
+<circle cx="9.5" cy="22.5" r="1.5" stroke="black" stroke-width="2"/>
+<circle cx="10.5" cy="12.5" r="1.5" stroke="black" stroke-width="2"/>
+<path d="M23.0002 36.5001V3.50006C23.0002 3.50006 24.7035 1.81482 26.0002 2.00006C27.367 2.19533 28.5002 4.50006 28.5002 4.50006C28.5002 4.50006 31.9021 4.07354 33.0002 5.50006C33.8424 6.59416 33.5002 9.00006 33.5002 9.00006C33.5002 9.00006 36.0396 9.36485 37.0002 10.5001C38.3876 12.1397 37.0002 16.0001 37.0002 16.0001C37.0002 16.0001 40.2605 17.582 40.5002 19.5001C40.7764 21.7092 37.0002 24.0001 37.0002 24.0001C37.0002 24.0001 39.3701 27.8003 38.0002 29.5001C36.8706 30.9018 33.5002 30.5001 33.5002 30.5001C33.5002 30.5001 34.6686 33.6874 33.5002 35.0001C32.3246 36.3208 29.0002 35.5001 29.0002 35.5001C29.0002 35.5001 27.8004 38.996 26.0002 39.0001C24.4752 39.0035 23.0002 36.5001 23.0002 36.5001Z" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M23.5 13.5H31" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M27.5 13.5V9.5" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M24 17H32.5V21.5" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M24 22.5H28V26.5" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M24 32H28V28" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="1.5" cy="1.5" r="1.5" transform="matrix(-1 0 0 1 28.5 7)" stroke="black" stroke-width="2"/>
+<circle cx="1.5" cy="1.5" r="1.5" transform="matrix(-1 0 0 1 29.5 26)" stroke="black" stroke-width="2"/>
+<circle cx="1.5" cy="1.5" r="1.5" transform="matrix(-1 0 0 1 34.5 21)" stroke="black" stroke-width="2"/>
+<circle cx="1.5" cy="1.5" r="1.5" transform="matrix(-1 0 0 1 33.5 11)" stroke="black" stroke-width="2"/>
+</svg>

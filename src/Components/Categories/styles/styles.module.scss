@@ -1,0 +1,120 @@
+@mixin breakpoint($point) {
+  @if $point ==lg {
+    @media (max-width: 992px) {
+      @content;
+    }
+  } @else if $point ==md {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $point ==sm {
+    @media (max-width: 576px) {
+      @content;
+    }
+  } @else if $point ==xs {
+    @media (max-width: 370px) {
+      @content;
+    }
+  } @else if $point ==xl {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if $point ==xxl {
+    @media (max-width: 1400px) {
+      @content;
+    }
+  } @else if $point ==xxxl {
+    @media (max-width: 1700px) {
+      @content;
+    }
+  }
+}
+
+@import "../../../global.css";
+
+.items {
+  transition: 0.2s;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  @include breakpoint(xxxl) {
+    grid-template-columns: repeat(4, 2fr);
+    width: 750px;
+    margin: 0 auto;
+  }
+  @include breakpoint(lg) {
+    grid-template-columns: repeat(2, 2fr);
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px 15px;
+  }
+
+  @include breakpoint(sm) {
+    gap: 30px 15px;
+  }
+}
+
+.item {
+  border-radius: 15px;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  border: 2px solid var(--violet_light_50);
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  transition: 0.2s;
+
+  @include breakpoint(lg) {
+    width: 100%;
+    margin: 0;
+    height: 115px;
+  }
+  @include breakpoint(sm) {
+    height: 125px;
+  }
+  div {
+    text-align: center;
+    height: 35px;
+  }
+  img {
+    margin: 10px auto;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.item:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 20px;
+}
+
+.checkbox {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.checked {
+  position: relative;
+  border: 2px solid var(--violet_light);
+}
+
+.checked::after {
+  content: "";
+  background-color: var(--violet_light);
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+}

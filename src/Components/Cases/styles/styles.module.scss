@@ -1,0 +1,179 @@
+@mixin breakpoint($point) {
+  @if $point ==lg {
+    @media (max-width: 992px) {
+      @content;
+    }
+  } @else if $point ==md {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $point ==sm {
+    @media (max-width: 576px) {
+      @content;
+    }
+  } @else if $point ==xs {
+    @media (max-width: 370px) {
+      @content;
+    }
+  } @else if $point ==xl {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if $point ==xxl {
+    @media (max-width: 1400px) {
+      @content;
+    }
+  }
+}
+
+@import "../../../global.css";
+
+.cases {
+  margin: 50px auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @include breakpoint(sm) {
+    margin: 100px auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--black);
+  }
+}
+
+.case {
+  margin: 1rem;
+  width: 25rem;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 3rem;
+  transition: 0.1s;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  @include breakpoint(lg) {
+    width: 19.8rem;
+  }
+  @include breakpoint(md) {
+    width: 34rem;
+  }
+  @include breakpoint(sm) {
+    width: auto;
+  }
+
+  &_image_wrapper {
+    padding-top: 10px;
+    border-radius: 25px;
+  }
+  &_image {
+    height: 15rem;
+    background-image: url(../../../../public/img/fon.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    border-radius: 25px;
+    background-size: contain;
+  }
+  &_content {
+    padding: 10px 15px;
+    height: 15rem;
+  }
+  &_profile {
+    display: flex;
+    align-items: start;
+    margin: 25px auto;
+  }
+  &_info {
+    margin-left: 10px;
+  }
+  &_title {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: -1px;
+  }
+  &_direction {
+    text-transform: uppercase;
+  }
+  &_headers {
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 25px;
+  }
+  &_read {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+    svg {
+      margin-left: 5px;
+    }
+  }
+}
+
+.case:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.case:hover > .case_image_wrapper {
+  z-index: -1;
+  position: relative;
+}
+
+.case:hover {
+  color: white;
+  background: linear-gradient(
+    180deg,
+    #ffffff00 15%,
+    #16245b6f 30%,
+    #071c3f 50%,
+    #000000 100%
+  );
+  @include breakpoint(lg) {
+    // width: 20rem;
+  }
+  @include breakpoint(md) {
+    // width: 30rem;
+  }
+  @include breakpoint(sm) {
+    width: auto;
+  }
+}
+
+.case_hover {
+  margin-top: -100px;
+  padding: 10px 15px;
+  transition: 0.4s;
+  animation-duration: 0.2s;
+  animation-name: slidein;
+  position: relative;
+  height: 17rem;
+}
+
+.description {
+  margin-top: 25px;
+  line-height: 120%;
+  margin-top: 25px;
+}
+
+@keyframes slidein {
+  from {
+    margin: 0;
+    opacity: 0;
+  }
+
+  to {
+    margin-top: -100px;
+    opacity: 1;
+  }
+}
+
+.read_bottm {
+  position: absolute;
+  bottom: -15px;
+  font-size: 16px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid wheat;
+}

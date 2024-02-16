@@ -1,0 +1,21 @@
+@import "../../../global.css";
+.layout {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 80vw;
+}
+@media (max-width: 1400px) {
+  .layout {
+    width: 90vw;
+  }
+}
+@media (max-width: 1200px) {
+  .layout {
+    width: 95vw;
+  }
+}
+@media (max-width: 768px) {
+  .layout {
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.module.css.map */
